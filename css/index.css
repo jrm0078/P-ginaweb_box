@@ -97,10 +97,14 @@ ul {
     font-weight: bold;
     font-size: 0.85em;
 }
-
-.menu-principal .destacado {
-    background-color: #d90f1d;
+.menu-principal li a:hover {
+    display: block;
+    padding: 10px 15px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 0.85em;
 }
+
 
 .menu-principal .carrito a {
     color: #d90f1d;
@@ -272,7 +276,7 @@ ul {
 
 /* 6. BANNER CONÓCENOS */
 .banner-conocenos {
-    background-image: url('kimonorojo.jpg');
+    background-image: url(../imagenes/kimonorojo.jpg);
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 

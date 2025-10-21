@@ -4,695 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guantes de boxeo Buddha Top Premium Negro Mate</title>
-    <!-- Font Awesome para los iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <style>
-        /* --- ESTILOS GENERALES Y RESET BÁSICO --- */
-        
-        /* Variables de color */
-        :root {
-            --color-principal: #D90F1D; /* Rojo Principal */
-            --color-secundario: #222222; /* Gris Oscuro/Fondo Menú */
-            --color-texto: #333333; /* Texto general */
-            --color-carrito: #388e3c; /* Verde para el carrito/stock */
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box; 
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            color: #555;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        .contenedor-pagina {
-            padding: 30px 40px; 
-            max-width: 1240px; 
-            margin: 0 auto;
-        }
-
-        /* --- 1. CABECERA TOP (Barra superior) --- */
-        .cabecera-top {
-            background-color: var(--color-secundario); /* Fondo negro */
-            color: white;
-            padding: 5px 0;
-            font-size: 0.8em;
-            text-align: center;
-        }
-
-        .cabecera-top .contenedor-pagina {
-            padding: 5px 40px; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .cabecera-top i {
-            margin-right: 8px;
-            color: var(--color-principal); 
-        }
-
-        /* --- 2. CABECERA MAIN (Logo, Búsqueda, Acciones) --- */
-
-        .cabecera-main {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .logo-placeholder {
-            width: 180px;
-            height: 35px;
-            background-color: var(--color-principal);
-            color: white;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1em;
-            border-radius: 4px;
-        }
-
-        .barra-busqueda {
-            display: flex;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            overflow: hidden;
-            width: 400px;
-        }
-
-        .barra-busqueda input {
-            padding: 8px 15px;
-            border: none;
-            outline: none;
-            flex-grow: 1;
-            font-size: 0.9em;
-        }
-
-        .barra-busqueda button {
-            background-color: var(--color-principal);
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            cursor: pointer;
-        }
-
-        .acciones-usuario {
-            display: flex;
-            align-items: center;
-            font-size: 0.8em;
-        }
-        
-        .acciones-usuario a {
-            margin-left: 15px;
-            color: #333;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        .acciones-usuario i {
-            font-size: 1.2em;
-        }
-        
-        .carrito-btn {
-            background-color: var(--color-carrito); 
-            color: white !important;
-            padding: 5px 10px;
-            border-radius: 4px;
-            font-weight: bold;
-            position: relative;
-        }
-        
-        .carrito-contador {
-            position: absolute;
-            top: -8px;
-            right: -8px;
-            background-color: var(--color-principal);
-            color: white;
-            border-radius: 50%;
-            padding: 2px 6px;
-            font-size: 0.7em;
-            line-height: 1;
-        }
-
-        /* --- 3. MENÚ DE NAVEGACIÓN PRINCIPAL --- */
-        .menu-nav {
-            background-color: var(--color-secundario); 
-        }
-        
-        .menu-nav ul {
-            display: flex;
-            justify-content: center;
-            padding: 0;
-        }
-        
-        .menu-nav li a {
-            display: block;
-            padding: 10px 15px;
-            color: white;
-            font-weight: bold;
-            font-size: 0.85em;
-            transition: background-color 0.2s;
-        }
-        
-        .menu-nav li a:hover {
-            background-color: var(--color-principal);
-        }
-
-        /* --- 4. DETALLES DEL PRODUCTO (Layout y Estilos) --- */
-
-        .product-detail-container {
-            display: flex;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .product-images {
-            flex: 1;
-            max-width: 50%;
-        }
-
-        .product-info {
-            flex: 1;
-            max-width: 50%;
-        }
-
-        /* Imágenes */
-        .imagen-principal {
-            width: 100%;
-            height: 450px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            border: 1px solid #eee;
-            border-radius: 4px;
-            margin-bottom: 10px;
-        }
-
-        .miniaturas {
-            display: flex;
-            gap: 10px;
-        }
-
-        .miniatura {
-            width: 80px;
-            height: 80px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            border: 1px solid #eee;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: border-color 0.2s;
-            opacity: 0.6;
-        }
-
-        .miniatura.active {
-            border-color: var(--color-principal);
-            opacity: 1;
-        }
-
-        /* Info del producto */
-        .product-info h1 {
-            font-size: 2em;
-            color: var(--color-secundario);
-            margin-bottom: 5px;
-            line-height: 1.2;
-        }
-
-        .valoracion-detalle {
-            color: orange;
-            font-size: 0.9em;
-            margin-bottom: 15px;
-        }
-        
-        .valoracion-detalle span {
-            color: var(--color-texto);
-            margin-left: 5px;
-        }
-
-        .product-price {
-            font-size: 2.5em;
-            color: var(--color-principal);
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .text-xs {
-            font-size: 0.75rem;
-        }
-        
-        .text-gray-500 {
-            color: #6b7280;
-        }
-
-        .opciones-compra label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 8px;
-            color: var(--color-secundario);
-            font-size: 0.9em;
-        }
-
-
-        /* Selector de Color */
-        .color-swatch {
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            border: 1px solid #ccc;
-            cursor: pointer;
-            display: inline-block;
-            margin-right: 8px;
-            box-shadow: 0 0 0 2px transparent; 
-            transition: all 0.2s ease-in-out;
-        }
-        .color-swatch.selected {
-            box-shadow: 0 0 0 2px var(--color-principal);
-            border-color: var(--color-principal);
-        }
-        .color-swatch.black { background-color: #000; }
-        .color-swatch.red { background-color: var(--color-principal); } 
-        
-        /* Selector de Talla */
-        .talla-btn {
-            padding: 8px 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            background-color: white;
-            cursor: pointer;
-            font-size: 0.9em;
-            transition: all 0.2s;
-            margin-right: 5px;
-        }
-        .talla-btn.selected {
-            background-color: var(--color-principal);
-            color: white;
-            border-color: var(--color-principal);
-        }
-        
-        /* Control de Cantidad */
-        .acciones-finales {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-top: 25px;
-        }
-
-        .control-cantidad {
-            display: flex;
-            align-items: center;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            overflow: hidden;
-            width: fit-content; 
-        }
-
-        .control-cantidad button {
-            background-color: #eee;
-            border: none;
-            padding: 10px 15px; 
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 1em; 
-        }
-
-        .control-cantidad input {
-            width: 40px; 
-            height: 42px; 
-            text-align: center;
-            border: none;
-            outline: none;
-            font-size: 0.9em;
-            -moz-appearance: textfield; 
-        }
-        .control-cantidad input::-webkit-outer-spin-button,
-        .control-cantidad input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-
-        /* Botón de Añadir al Carrito */
-        .btn-carrito {
-            display: flex; 
-            align-items: center;
-            justify-content: center;
-            gap: 8px; 
-            background-color: var(--color-carrito);
-            color: white;
-            border: none;
-            padding: 10px 25px;
-            font-weight: bold;
-            font-size: 1em;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-            flex-grow: 1;
-            max-width: 300px;
-        }
-
-        .btn-carrito:hover {
-            background-color: #2e7d32;
-        }
-        
-        /* Pestañas (Tabs) */
-        .product-tabs-section {
-            margin-top: 50px;
-            border-top: 1px solid #eee;
-            padding-top: 30px;
-        }
-        
-        .tabs-nav {
-            display: flex;
-            gap: 15px;
-            border-bottom: 2px solid #eee;
-            margin-bottom: 20px;
-        }
-
-        .tab-btn {
-            background: none;
-            border: none;
-            padding: 10px 0;
-            cursor: pointer;
-            font-size: 1em;
-            font-weight: bold;
-            color: #666;
-            position: relative;
-            transition: color 0.2s;
-        }
-
-        /* Estado activo por defecto (Detalles del producto) */
-        #btn-detalles {
-             color: var(--color-principal);
-        }
-
-        #btn-detalles::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: var(--color-principal);
-        }
-
-        .tab-content {
-            padding: 10px 0;
-            /* Aquí se asume que solo el primer contenido es visible por defecto sin JS */
-        }
-
-        #tab-caracteristicas, #tab-tallas {
-            display: none; /* Ocultamos las pestañas no activas */
-        }
-
-        .tab-content h3 {
-            font-size: 1.2em;
-            color: var(--color-secundario);
-            margin-bottom: 15px;
-        }
-
-        .tab-content p {
-            line-height: 1.6;
-            margin-bottom: 15px;
-            font-size: 0.95em;
-        }
-
-        .listado-features {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .listado-features li {
-            margin-bottom: 10px;
-            display: flex;
-            align-items: flex-start;
-            font-size: 0.95em;
-        }
-
-        .listado-features i {
-            color: var(--color-carrito);
-            margin-right: 10px;
-            font-size: 1.1em;
-            margin-top: 3px;
-        }
-
-        .tabla-tallas-img {
-            border: 1px solid #eee;
-            border-radius: 4px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* --- 5. BANNER CONOCENOS --- */
-        .banner-conocenos {
-            background-color: var(--color-principal);
-            color: white;
-            text-align: center;
-            padding: 30px 40px;
-            margin: 30px 0;
-            border-radius: 8px;
-        }
-        
-        .banner-conocenos h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        
-        .banner-conocenos p {
-            margin-bottom: 20px;
-        }
-        
-        .banner-conocenos a {
-            background-color: white;
-            color: var(--color-principal);
-            padding: 10px 25px;
-            border-radius: 4px;
-            font-weight: bold;
-            display: inline-block;
-        }
-
-
-        /* --- 6. PROPUESTAS DE VALOR --- */
-        .propuestas-valor {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px 0;
-            border-top: 1px solid #eee;
-            border-bottom: 1px solid #eee;
-            margin-bottom: 30px;
-        }
-
-        .vp-item {
-            text-align: center;
-            flex: 1;
-        }
-
-        .vp-item i {
-            font-size: 2em;
-            color: var(--color-principal);
-            margin-bottom: 5px;
-        }
-
-        .vp-item p {
-            font-size: 0.8em;
-            font-weight: bold;
-            color: #333;
-        }
-
-        /* --- 7. PIE DE PÁGINA --- */
-        .pie-pagina {
-            background-color: var(--color-secundario);
-            color: #ccc;
-            padding: 30px 40px;
-            font-size: 0.9em;
-        }
-
-        /* AJUSTE para Flexbox en el Pie de Página */
-        .columnas-pie {
-            display: flex;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-            gap: 30px;
-        }
-
-        .columna {
-            flex: 1;
-            margin-right: 20px;
-        }
-
-        .columna h3, .columna h4 {
-            color: white;
-            font-size: 1em;
-            margin-bottom: 15px;
-        }
-
-        .columna ul {
-            padding: 0;
-        }
-
-        .columna li {
-            margin-bottom: 5px;
-        }
-
-        .iconos-sociales i, .iconos-pago i {
-            font-size: 1.5em;
-            margin-right: 10px;
-            color: white;
-        }
-        
-        .iconos-sociales {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .metodos-pago {
-            display: flex;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .metodos-pago img {
-            border-radius: 3px;
-            border: 1px solid #555;
-        }
-
-        .tienda-fisica {
-            flex: 1.5; /*Da más espacio*/
-        }
-
-        .mapa-placeholder {
-            height: 150px;
-            background-color: #555;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            text-align: center;
-            flex-direction: column;
-            gap: 10px;
-            border-radius: 4px;
-        }
-
-        .mapa-placeholder i {
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/producto.css"> 
 </head>
 <body>
-
-    <header>
-        <!-- Barra superior negra -->
-        <div class="cabecera-top">
-            <div class="contenedor-pagina">
-                <span><i class="fas fa-truck"></i> ENVÍOS Y CAMBIOS EN MENOS DE 24 HORAS</span>
-            </div>
-        </div>
-
-        <!-- Cabecera principal: Logo, búsqueda, iconos de usuario -->
-        <div class="cabecera-main contenedor-pagina">
-            <div class="logo-placeholder">KANGAROOBXING</div>
+    <header class="cabecera-principal">
+        <div class="logo-y-busqueda">
+            <div class="logo-placeholder"><a href="/index.html"><img src="../imagenes/logokgbox.png" alt=""></a></div>
             <div class="barra-busqueda">
-                <input type="text" placeholder="¿Qué buscas?">
+                <input type="text" placeholder="Buscar producto...">
                 <button><i class="fas fa-search"></i></button>
             </div>
-            <div class="acciones-usuario">
-                <a href="#"><i class="fas fa-question-circle"></i> Ayuda</a>
-                <a href="#"><i class="fas fa-user"></i> Iniciar sesión | Soy nuevo</a>
-                <a href="#"><i class="fas fa-heart"></i> wishlist</a>
-                <a href="#" class="carrito-btn">
-                    <i class="fas fa-shopping-cart"></i> Mi compra
-                    <span class="carrito-contador">0</span>
-                </a>
-            </div>
         </div>
-
-        <!-- Menú de navegación principal -->
-        <nav class="menu-nav">
-            <ul class="contenedor-pagina">
-                <li><a href="#">OFERTAS</a></li>
-                <li><a href="#">NOVEDADES!</a></li>
-                <li><a href="#">BOXEO</a></li>
-                <li><a href="#">MUAY THAI</a></li>
-                <li><a href="#">MMA</a></li>
-                <li><a href="#">BJJ</a></li>
-                <li><a href="#">ROPA</a></li>
-                <li><a href="#">MOCHILAS</a></li>
-                <li><a href="#">UFC</a></li>
-                <li><a href="#">GRAPPLING</a></li>
-                <li><a href="#">MARCAS</a></li>
-                <li><a href="#">BLOG</a></li>
-            </ul>
-        </nav>
+        <div class="acciones-usuario">
+            <a href="#"><i class="fas fa-question-circle"></i> Ayuda</a>
+            <a href="#"><i class="fas fa-user"></i> Iniciar sesión | Soy nuevo</a>
+        </div>
     </header>
 
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="#">OFERTAS</a></li>
+            <li><a href="#">NOVEDADES</a></li>
+            <li><a href="#">BOXEO</a></li>
+            <li><a href="#">MUAY THAI</a></li>
+            <li><a href="#">MMA</a></li>
+            <li><a href="#">BJJ</a></li>
+            <li><a href="#">ROPA</a></li>
+            <li><a href="#">MARCAS</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li class="carrito">
+                <a href="#"><i class="fas fa-shopping-basket"></i> mi compra <span>0</span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="barra-anuncio">
+        ENVÍOS Y CAMBIOS EN MENOS DE 24 HORAS
+    </div>
+
     <main class="contenedor-pagina">
-        <div class="product-detail-container mt-8">
-            <!-- Lado Izquierdo: Imágenes del producto -->
+        <div class="product-detail-container">
             <div class="product-images">
-                <div class="imagen-principal" style="background-image: url('https://placehold.co/400x450/222222/D90F1D?text=GUANTE+BOXEO'); background-color: white;"></div>
+                <div class="imagen-principal" style="background-image: url('../imagenes/vista1gb.png');"></div>
+                
                 <div class="miniaturas">
-                    <!-- Dejamos la primera miniatura con la clase 'active' para que se vea resaltada por defecto -->
-                    <div class="miniatura active" style="background-image: url('https://placehold.co/80x80/222222/D90F1D?text=VISTA+1'); opacity: 1;"></div>
-                    <div class="miniatura" style="background-image: url('https://placehold.co/80x80/555555/D90F1D?text=VISTA+2');"></div>
-                    <div class="miniatura" style="background-image: url('https://placehold.co/80x80/222222/D90F1D?text=VISTA+3');"></div>
+                    <div class="miniatura active" style="background-image: url('../imagenes/vista1gb.png');"></div>
+                    <div class="miniatura" style="background-image: url('../imagenes/vista2gb.png');"></div>
+                    <div class="miniatura" style="background-image: url('../imagenes/vista3gb.png');"></div>
                 </div>
             </div>
 
-            <!-- Lado Derecho: Información del producto -->
             <div class="product-info">
-                <h1 class="text-3xl">Guantes de boxeo Buddha Top Premium Negro Mate</h1>
-                <div class="valoracion-detalle mt-2">
+                <h1>Guantes de boxeo Buddha Top Premium Negro Mate</h1>
+                
+                <div class="valoracion-detalle">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                     <span>(1 reviews)</span>
                 </div>
+                
                 <div class="product-price">39,95€</div>
-                <p class="text-xs text-gray-500 mb-4">IVA INCL.</p>
+                <p class="iva-info">IVA INCL.</p>
 
-                <!-- Selector de Talla -->
-                <div class="opciones-compra mb-6">
+                <div class="opciones-compra">
                     <label>Seleccione talla:</label>
                     <div class="selector-talla">
                         <button class="talla-btn">10 oz</button>
                         <button class="talla-btn">12 oz</button>
-                        <button class="talla-btn selected">14 oz</button>
+                        <button class="talla-btn">14 oz</button>
                         <button class="talla-btn">16 oz</button>
                     </div>
                 </div>
 
-                <!-- Selector de Color -->
-                <div class="opciones-compra mb-6">
+                <div class="opciones-compra">
                     <label>Seleccione color:</label>
                     <div class="selector-color">
-                        <span class="color-swatch black selected"></span>
+                        <span class="color-swatch black"></span>
                         <span class="color-swatch red"></span>
                     </div>
                 </div>
 
-                <!-- Cantidad y Botón de Añadir al Carrito -->
                 <div class="acciones-finales">
                     <div class="control-cantidad">
                         <button>-</button>
-                        <!-- Dejamos el input, pero sin funcionalidad de incremento/decremento -->
                         <input type="number" value="1" min="1" id="product-quantity">
                         <button>+</button>
                     </div>
@@ -703,52 +97,30 @@
             </div>
         </div>
 
-        <!-- Zona de Pestañas (Descripción, Características, Guía de Tallas) -->
         <div class="product-tabs-section">
-            <div class="tabs-nav">
-                <!-- Por defecto, el botón de Detalles está activo con CSS -->
-                <button class="tab-btn" id="btn-detalles">Detalles del producto</button>
-                <button class="tab-btn" id="btn-caracteristicas">Características técnicas:</button>
-                <button class="tab-btn" id="btn-tallas">Guía de tallas:</button>
-            </div>
+            <h3>Detalles del producto: Guantes de boxeo Buddha Elite Venom negro mate</h3>
+            <p>¡Únete a la élite de los boxeadores con los nuevos guantes de boxeo Elite, fabricados especialmente para los más exigentes! Estos guantes están cosidos completamente a mano en Tailandia con cuero Skintrex 100%, estos guantes son la elección perfecta para aquellos que buscan una experiencia de lucha sin igual.</p>
+            
+            <h3>Características técnicas:</h3>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Hecho en cuero Skintrex.</li>
+                <li><i class="fas fa-check-circle"></i> Espuma de triple densidad.</li>
+                <li><i class="fas fa-check-circle"></i> Refuerzo en la palma para una máxima absorción de sudor.</li>
+                <li><i class="fas fa-check-circle"></i> Doble costura para mayor duración.</li>
+                <li><i class="fas fa-check-circle"></i> Cierre con velcro de doble.</li>
+            </ul>
 
-            <!-- Contenido de la primera pestaña: Detalles del producto (Visible por defecto) -->
-            <div class="tab-content" id="tab-detalles">
-                <h3 class="mb-4">Detalles del producto: <span class="font-normal text-sm text-gray-600 block sm:inline">Guantes de boxeo Buddha Elite Venom negro mate</span></h3>
-                <p>¡Únete a la élite de los boxeadores con los nuevos guantes de boxeo Elite, fabricados especialmente para los más exigentes! Estos guantes están cosidos completamente a mano en Tailandia con cuero Skintrex 100%, estos guantes son la elección perfecta para aquellos que buscan una experiencia de lucha sin igual.</p>
-                <p>La calidad y la artesanía de estos guantes son evidentes en cada detalle, lo que garantiza una durabilidad excepcional y una resistencia para los combates más exigentes. Con su diseño elegante y moderno, los guantes de boxeo Elite son la elección perfecta para aquellos que buscan destacar en el ring.</p>
-                <p>Además de su impresionante diseño, los guantes de boxeo Elite también son ideales para practicar boxeo y perfeccionar la técnica de manera cómoda y fácil de lucha posible. El cuero Skintrex 100% proporciona una protección excepcional y una durabilidad inigualable, lo que te permite entrenar con confianza.</p>
-            </div>
-
-            <!-- Contenido de la segunda pestaña: Características técnicas (Oculto por CSS) -->
-            <div class="tab-content" id="tab-caracteristicas">
-                <h3 class="mb-3">Características técnicas:</h3>
-                <ul class="listado-features">
-                    <li><i class="fas fa-check-circle"></i> Hecho en cuero Skintrex.</li>
-                    <li><i class="fas fa-check-circle"></i> Espuma de triple densidad.</li>
-                    <li><i class="fas fa-check-circle"></i> Refuerzo en la palma para una máxima absorción de sudor..</li>
-                    <li><i class="fas fa-check-circle"></i> Doble costura para mayor duración.</li>
-                    <li><i class="fas fa-check-circle"></i> Logo en relieve Venom (toque 3D) en cada puño.</li>
-                    <li><i class="fas fa-check-circle"></i> Cierre con velcro de doble.</li>
-                    <li><i class="fas fa-check-circle"></i> SKU: EU-VENUM-1392</li>
-                </ul>
-            </div>
-
-            <!-- Contenido de la tercera pestaña: Guía de tallas (Oculto por CSS) -->
-            <div class="tab-content" id="tab-tallas">
-                <h3 class="mb-3">Guía de tallas:</h3>
-                <img src="https://placehold.co/800x300/f0f0f0/333333?text=TABLA+DE+TALLAS+%7C+Peso+vs.+Oz" alt="Tabla de Tallas" class="tabla-tallas-img">
-            </div>
+            <h3>Guía de tallas:</h3>
+            <img src="../imagenes/tallas.png" alt="Tabla de Tallas" class="tabla-tallas-img">
         </div>
         
-        <!-- Banner Conocenos -->
         <div class="banner-conocenos">
-            <h2>ENVÍO Y DEVOLUCIÓN GRATUITOS EN PEDIDOS SUPERIORES A 50€</h2>
-            <p>Descubre una experiencia de compra sin preocupaciones. ¡Encuentra tus favoritos y recíbelos en casa sin coste adicional!</p>
-            <a href="#">CONOCENOS</a>
+            <div class="contenido-banner">
+                <h2>ENVÍO Y DEVOLUCIÓN GRATUITOS EN PEDIDOS SUPERIORES A 50€</h2>
+                <a href="#">CONOCENOS</a>
+            </div>
         </div>
 
-        <!-- Propuestas de Valor -->
         <div class="propuestas-valor">
             <div class="vp-item">
                 <i class="fas fa-shipping-fast"></i>
@@ -770,47 +142,50 @@
 
     </main>
 
-    <!-- Pie de Página -->
     <footer class="pie-pagina">
         <div class="columnas-pie">
             <div class="columna">
-                <h3>ATENCIÓN AL CLIENTE</h3>
+                <h3>Servicio</h3>
                 <ul>
+                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="#">Devoluciones</a></li>
                     <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Términos y condiciones</a></li>
-                    <li><a href="#">Envíos, cambios y devoluciones</a></li>
-                    <li><a href="#">Razón social</a></li>
-                    <li><a href="#">Preguntas Frecuentes (F.A.Q)</a></li>
                 </ul>
             </div>
             <div class="columna">
-                <h3>SEGURIDAD Y PRIVACIDAD</h3>
+                <h3>Sobre Nosotros</h3>
                 <ul>
-                    <li><a href="#">Aviso Legal</a></li>
-                    <li><a href="#">Política de privacidad</a></li>
-                    <li><a href="#">Política de cookies</a></li>
+                    <li><a href="#">Historia</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">Nuestros Valores</a></li>
                 </ul>
             </div>
-            <div class="columna">
-                <h3>REDES SOCIALES</h3>
-                <div class="iconos-sociales">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-youtube"></i>
-                </div>
-                <h3>MÉTODOS DE PAGO</h3>
-                <div class="metodos-pago">
-                    <img src="https://placehold.co/50x30/ffffff/000000?text=VISA" alt="Visa">
-                    <img src="https://placehold.co/50x30/ffffff/000000?text=MC" alt="MasterCard">
-                    <img src="https://placehold.co/50x30/ffffff/000000?text=PAYPAL" alt="PayPal">
+            <div class="columna suscripcion-columna">
+                <h3>Suscríbete al Newsletter</h3>
+                <form class="formulario-suscripcion">
+                    <input type="email" placeholder="Introduce tu email" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <div class="columna tienda-fisica">
+                <h3>Tienda Física</h3>
+                <p>Visítanos:</p>
+                <div class="mapa-placeholder">
+                    Calle Jéronimo Sans, 7<br>
+                    28002 Madrid, España
                 </div>
             </div>
             <div class="columna">
-                <h3>VISITA NUESTRA TIENDA FISICA</h3>
-                <div class="mapa-placeholder">
-                    <i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>C/ Conde de Peñalver, 22 Madrid</p>
+                <h4>Redes Sociales</h4>
+                <div class="iconos-sociales">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <h4 style="margin-top: 20px;">Pagos</h4>
+                <div class="iconos-pago">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-paypal"></i>
                 </div>
             </div>
         </div>

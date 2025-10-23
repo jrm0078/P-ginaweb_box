@@ -42,8 +42,7 @@
 
         .logo-placeholder {
             width: 200px; 
-            height: 40px; 
-            background-color: transparent; 
+            height: 60px;  
             display: flex;
             align-items: center;
             justify-content: center;

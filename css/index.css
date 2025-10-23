@@ -42,8 +42,7 @@ ul {
 
 .logo-placeholder {
     width: 150px;
-    height: 30px;
-    background-color: #d90f1d;
+    height: 60px;
     color: white;
     font-weight: bold;
     display: flex;
@@ -244,7 +243,7 @@ ul {
     font-size: 0.9em;
     min-height: 35px;
     margin-bottom: 5px;
-    color: #ff0000; 
+    color: #000000; 
 }
 
 .valoracion {

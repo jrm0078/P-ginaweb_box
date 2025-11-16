@@ -29,7 +29,7 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 30px 40px; 
+    padding: 40px 40px; 
     border-bottom: 1px solid #eee;
     font-size: 0.9em;
 }
@@ -42,8 +42,7 @@ ul {
 
 .logo-placeholder {
     width: 150px;
-    height: 30px;
-    background-color: #d90f1d;
+    height: 60px;
     color: white;
     font-weight: bold;
     display: flex;
@@ -58,13 +57,15 @@ ul {
     border: 1px solid #ccc;
     border-radius: 3px;
     overflow: hidden;
+    margin-left: 100px;
 }
 
 .barra-busqueda input {
-    padding: 5px 10px;
+    padding: 10px 15px;
     border: none;
     outline: none;
-    width: 300px;
+    width: 400px;
+    height: 30px;
 }
 
 .barra-busqueda button {
@@ -244,7 +245,7 @@ ul {
     font-size: 0.9em;
     min-height: 35px;
     margin-bottom: 5px;
-    color: #ff0000; 
+    color: #000000; 
 }
 
 .valoracion {

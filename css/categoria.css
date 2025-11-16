@@ -1,7 +1,7 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box; 
+            box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
 
@@ -19,8 +19,8 @@
         }
 
         .contenedor-pagina {
-            padding: 30px 40px; 
-            max-width: 1240px; 
+            padding: 30px 40px;
+            max-width: 1240px;
             margin: 0 auto;
         }
 
@@ -29,7 +29,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            padding: 40px 40px; 
+            padding: 40px 40px;
             border-bottom: 1px solid #eee;
             font-size: 0.9em;
         }
@@ -41,13 +41,14 @@
         }
 
         .logo-placeholder {
-            width: 200px; 
-            height: 60px;  
+            width: 200px;
+            height: 60px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-right: 40px;
         }
+
         .barra-busqueda {
             display: flex;
             border: 1px solid #ccc;
@@ -95,6 +96,7 @@
             font-weight: bold;
             font-size: 0.85em;
         }
+
         .menu-principal li a:hover {
             display: block;
             padding: 10px 15px;
@@ -149,7 +151,8 @@
             margin-right: 20px;
         }
 
-        .columna h3, .columna h4 {
+        .columna h3,
+        .columna h4 {
             color: white;
             font-size: 1em;
             margin-bottom: 15px;
@@ -163,7 +166,8 @@
             margin-bottom: 5px;
         }
 
-        .iconos-sociales i, .iconos-pago i {
+        .iconos-sociales i,
+        .iconos-pago i {
             font-size: 1.5em;
             margin-right: 10px;
             color: white;
@@ -174,7 +178,7 @@
         }
 
         .tienda-fisica {
-            flex: 1.5; 
+            flex: 1.5;
         }
 
         .mapa-placeholder {
@@ -193,7 +197,7 @@
         /* ========================================= */
 
         .titulo-categoria {
-            background-color: #333; 
+            background-color: #333;
             color: white;
             padding: 10px 20px;
             font-size: 1.2em;
@@ -207,25 +211,25 @@
 
         .pagina-listado {
             display: flex;
-            gap: 20px; 
+            gap: 20px;
             width: 100%;
         }
 
         /* --- Barra de Filtros (Sidebar) --- */
         .sidebar-filtros {
-            width: 250px; 
+            width: 250px;
             min-width: 250px;
-            border: 1px solid #ccc; 
+            border: 1px solid #ccc;
             font-size: 0.9em;
-            flex-shrink: 0; 
+            flex-shrink: 0;
         }
 
         .filtros-grupo {
-            border-top: 1px solid #ccc; 
+            border-top: 1px solid #ccc;
         }
 
         .filtros-grupo:first-child {
-            border-top: none; 
+            border-top: none;
         }
 
         .filtros-grupo h3 {
@@ -243,7 +247,7 @@
         }
 
         .filtros-grupo h3 i {
-            color: #333; 
+            color: #333;
             font-size: 0.7em;
             transition: transform 0.3s;
         }
@@ -261,19 +265,19 @@
 
         /* --- Área de Productos (Derecha) --- */
         .area-productos {
-            flex-grow: 1; 
-            flex-basis: 75%; 
-            padding-top: 10px; 
+            flex-grow: 1;
+            flex-basis: 75%;
+            padding-top: 10px;
         }
 
         /* Contenedor de Ordenación */
         .opciones-ordenacion-contenedor {
             display: flex;
-            justify-content: space-between; 
+            justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
             font-size: 0.9em;
-            border-bottom: 1px solid #eee; 
+            border-bottom: 1px solid #eee;
             padding-bottom: 10px;
         }
 
@@ -306,7 +310,8 @@
 
         .malla-productos {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 columnas */
             gap: 20px;
             padding-top: 20px;
         }
@@ -346,7 +351,7 @@
             font-size: 0.9em;
             color: #333;
             margin-bottom: 5px;
-            min-height: 36px; 
+            min-height: 36px;
         }
 
         .tarjeta-producto .valoracion {
@@ -383,7 +388,8 @@
             gap: 5px;
         }
 
-        .paginacion a, .paginacion span {
+        .paginacion a,
+        .paginacion span {
             padding: 8px 12px;
             border: 1px solid #ccc;
             border-radius: 3px;
@@ -403,4 +409,10 @@
             color: white;
             border-color: #d90f1d;
             font-weight: bold;
+        }
+
+        .media-boxeo iframe {
+            width: 90%;
+            max-width: 600px;
+            aspect-ratio: 16 / 9;
         }

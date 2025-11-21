@@ -150,6 +150,15 @@ ul {
     text-align: center;
     flex: 1; /* Para que ocupen el mismo espacio */
 }
+.item-categoria:hover {
+    text-align: center;
+    flex: 1; /* Para que ocupen el mismo espacio */
+    transform: scale(1.05); /* Amplía el cuadro */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Añade sombra */
+}
+.item-categoria:hover img{
+    transform: scale(1.1); /* Amplía el cuadro */
+}
 
 .imagen-placeholder {
     width: 100%;
@@ -196,6 +205,15 @@ ul {
     text-align: center;
     position: relative;
     background-color: white;
+}
+.tarjeta-producto:hover {
+    flex: 1;
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    transform: scale(1.05);
 }
 
 .icono-corazon {
@@ -434,3 +452,87 @@ ul {
     font-weight: bold;
     text-align: center;
 }
+
+
+/*SLIDER*/
+.slider-principal {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    background-color: #000;
+    height: 300px;
+}
+
+.slider-track-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-track {
+    display: flex;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev-btn { left: 15px; }
+.next-btn { right: 15px; }
+
+@media screen and (max-width: 768px) {
+    .slider-principal { height: 220px; }
+    .caption { font-size: 1rem; padding: 6px 12px; }
+    .slider-btn { font-size: 1.5rem; padding: 8px 12px; }
+}
+
+
+
+

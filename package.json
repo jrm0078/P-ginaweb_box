@@ -1,0 +1,29 @@
+{
+  "name": "p-ginaweb_box-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrm0078/P-ginaweb_box.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrm0078/P-ginaweb_box/issues"
+  },
+  "homepage": "https://github.com/jrm0078/P-ginaweb_box#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {
+    "sass": "^1.94.2"
+  },
+  "scripts": {
+  "sass": "sass --watch scss/main.scss css/main.css"
+  }
+}

@@ -1,0 +1,560 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.contenedor-pagina {
+    padding: 30px 40px; 
+    max-width: 1240px; 
+    margin: 0 auto;
+}
+
+/* 1. CABECERA PRINCIPAL */
+.cabecera-principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 40px; 
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+}
+
+.logo-y-busqueda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-placeholder {
+    width: 150px;
+    height: 60px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    font-size: 0.8em;
+}
+
+.barra-busqueda {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-left: 100px;
+}
+
+.barra-busqueda input {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    width: 400px;
+    height: 30px;
+}
+
+.barra-busqueda button {
+    background-color: #d90f1d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.acciones-usuario a {
+    margin-left: 15px;
+    color: #333;
+}
+
+/* 2. MENÚ PRINCIPAL */
+.menu-principal {
+    background-color: #333;
+}
+
+.menu-principal ul {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-principal li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.85em;
+}
+.menu-principal li a:hover {
+    display: block;
+    padding: 10px 15px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+
+.menu-principal .carrito a {
+    color: #d90f1d;
+    background-color: white;
+    padding: 10px 15px;
+}
+
+.menu-principal .carrito span {
+    background-color: #d90f1d;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    margin-left: 5px;
+    font-size: 0.7em;
+}
+
+/* 3. BARRA DE ANUNCIO */
+.barra-anuncio {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 4. CATEGORÍAS SUPERIORES */
+.categorias-superiores h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.lista-categorias {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.item-categoria {
+    text-align: center;
+    flex: 1; /* Para que ocupen el mismo espacio */
+}
+.item-categoria:hover {
+    text-align: center;
+    flex: 1; /* Para que ocupen el mismo espacio */
+    transform: scale(1.05); /* Amplía el cuadro */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Añade sombra */
+}
+.item-categoria:hover img{
+    transform: scale(1.1); /* Amplía el cuadro */
+}
+
+.imagen-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-categoria p {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 5. PRODUCTOS DESTACADOS */
+.productos-destacados {
+    margin-bottom: 40px;
+}
+
+.carrusel-productos {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.flecha {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.tarjeta-producto {
+    flex: 1;
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background-color: white;
+}
+.tarjeta-producto:hover {
+    flex: 1;
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    transform: scale(1.05);
+}
+
+.icono-corazon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #d90f1d;
+    font-size: 1.2em;
+}
+
+.imagen-producto {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    background-color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.imagen-producto.negro {
+    background-color: #ffffff;
+}
+
+.imagen-producto.morado {
+    background-color: #ffffff;
+}
+
+.etiqueta-roja {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: #d90f1d;
+    color: white;
+    padding: 3px 8px;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.nombre-producto {
+    font-size: 0.9em;
+    min-height: 35px;
+    margin-bottom: 5px;
+    color: #000000; 
+}
+
+.valoracion {
+    color: orange;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+.precio {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #d90f1d;
+    margin-bottom: 5px;
+}
+
+.etiquetas {
+    font-size: 0.65em;
+    margin-top: 5px;
+}
+
+.etiquetas span {
+    border: 1px solid #d90f1d;
+    color: #d90f1d;
+    padding: 1px 4px;
+    margin: 0 2px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+/* 6. BANNER CONÓCENOS */
+.banner-conocenos {
+    background-image: url(../imagenes/kimonorojo.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: scroll; 
+
+    height: 300px; 
+    display: flex;
+    align-items: center;
+    margin: 0 -40px; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.contenido-banner {
+    background-color: rgba(0, 0, 0, 0.75); /* Fondo oscuro transparente */
+    color: white;
+    padding: 30px;
+    width: 50%; 
+    margin-left: 40px;
+    position: relative;
+    z-index: 2; /* Para que el contenido esté por encima del fondo */
+    
+}
+
+.contenido-banner h2 {
+    color: white;
+    margin-top: 0;
+}
+
+.contenido-banner p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.texto-compra {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 7. PROPUESTAS DE VALOR */
+.propuestas-valor {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+.vp-item {
+    text-align: center;
+    flex: 1;
+}
+
+.vp-item i {
+    font-size: 2em;
+    color: #d90f1d;
+    margin-bottom: 5px;
+}
+
+.vp-item p {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 8. PIE DE PÁGINA */
+.pie-pagina {
+    background-color: #333;
+    color: #ccc;
+    padding: 30px 40px;
+    font-size: 0.9em;
+}
+
+.columnas-pie {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.columna {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.formulario-suscripcion {
+    display: flex;
+    margin-top: 10px;
+}
+
+.formulario-suscripcion input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+    flex-grow: 1;
+}
+
+.formulario-suscripcion button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #bbb3b3;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    transition: background-color 0.3s;
+}
+
+.formulario-suscripcion button:hover {
+    background-color: #a00b18;
+}
+
+.columna h3, .columna h4 {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.columna ul {
+    padding: 0;
+}
+
+.columna li {
+    margin-bottom: 5px;
+}
+
+.iconos-sociales i, .iconos-pago i {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: white;
+}
+
+.iconos-pago i {
+    font-size: 2em;
+}
+
+.tienda-fisica {
+    flex: 1.5; /*Da más espacio*/
+}
+
+.mapa-placeholder {
+    height: 150px;
+    background-color: #555;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*SLIDER*/
+.slider-principal {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    background-color: #000;
+    height: 300px;
+}
+
+.slider-track-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-track {
+    display: flex;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev-btn { left: 15px; }
+.next-btn { right: 15px; }
+
+@media screen and (max-width: 768px) {
+    .slider-principal { height: 220px; }
+    .caption { font-size: 1rem; padding: 6px 12px; }
+    .slider-btn { font-size: 1.5rem; padding: 8px 12px; }
+}
+/* Logo más grande */
+.logo-navbar {
+  height: 130px; /* ajusta si lo quieres más grande */
+}
+
+/* Cambiar color de enlaces del navbar */
+.nav-custom {
+  font-weight: 500;
+  color: #333 !important;   /* tu nuevo color */
+}
+
+.nav-custom:hover {
+  color: #ff4d4d !important; /* color al pasar el mouse */
+}
+
+/* Enlace Regístrate en azul y subrayado */
+.blue-underline {
+  color: #007bff !important;
+  text-decoration: underline;
+}
+
+body #login{
+  background: linear-gradient(135deg, #f3f4f7, #e2e8ff);
+  min-height: 100vh;
+}
+

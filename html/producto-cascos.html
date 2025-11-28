@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guantes de Boxeo - Listado de Productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+    <header class="cabecera-principal">
+        <div class="logo-y-busqueda">
+            <div class="logo-placeholder">
+                <div class="logo-placeholder"><a href="/index.html"><img src="../imagenes/kboxlogoJRM.ico" alt=""></a>
+                </div>
+            </div>
+            <div class="barra-busqueda">
+                <input type="text" placeholder="Buscar producto...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div class="acciones-usuario">
+            <a href="#"><i class="fas fa-question-circle"></i> Ayuda</a>
+            <a href="./login.html"><i class="fas fa-user"></i> Iniciar sesión | Soy nuevo</a>
+        </div>
+    </header>
+
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="#">OFERTAS</a></li>
+            <li><a href="#">NOVEDADES</a></li>
+            <li><a href="#">BOXEO</a></li>
+            <li><a href="#">MUAY THAI</a></li>
+            <li><a href="#">MMA</a></li>
+            <li><a href="#">BJJ</a></li>
+            <li><a href="#">ROPA</a></li>
+            <li><a href="#">MARCAS</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li class="carrito">
+                <a href="#"><i class="fas fa-shopping-basket"></i> mi compra <span>0</span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="barra-anuncio">
+        ENVÍOS Y CAMBIOS EN MENOS DE 24 HORAS
+    </div>
+
+    <main class="contenedor-pagina">
+
+        <h2 class="titulo-categoria">
+            GUANTES DE BOXEO
+        </h2>
+
+        <div class="pagina-listado">
+
+            <aside class="sidebar-filtros">
+                <div class="filtros-grupo" style="border-top: none;">
+                    <h3>Filtros <i class="fas fa-filter"></i></h3>
+                </div>
+
+                <div class="filtros-grupo">
+                    <h3>MARCAS <i class="fas fa-caret-up"></i></h3>
+                    <div class="filtros-opciones">
+                        <label><input type="checkbox"> Buddha (12)</label>
+                        <label><input type="checkbox"> Venum (8)</label>
+                        <label><input type="checkbox"> Leone (5)</label>
+                        <label><input type="checkbox"> DSK (3)</label>
+                    </div>
+                </div>
+
+                <div class="filtros-grupo">
+                    <h3>COLORES <i class="fas fa-caret-up"></i></h3>
+                    <div class="filtros-opciones">
+                        <label><input type="checkbox"> Negro (15)</label>
+                        <label><input type="checkbox"> Rojo (5)</label>
+                        <label><input type="checkbox"> Rosa (2)</label>
+                        <label><input type="checkbox"> Azul (3)</label>
+                    </div>
+                </div>
+
+                <div class="filtros-grupo">
+                    <h3>TALLAS <i class="fas fa-caret-up"></i></h3>
+                    <div class="filtros-opciones">
+                        <label><input type="checkbox"> 8 oz (5)</label>
+                        <label><input type="checkbox"> 10 oz (12)</label>
+                        <label><input type="checkbox"> 12 oz (10)</label>
+                        <label><input type="checkbox"> 14 oz (8)</label>
+                    </div>
+                </div>
+
+                <div class="filtros-grupo precio">
+                    <h3>PRECIO <i class="fas fa-caret-up"></i></h3>
+                    <div class="filtros-opciones">
+                        <label><input type="checkbox"> Menos de 20€</label>
+                        <label><input type="checkbox"> 20€ - 40€</label>
+                        <label><input type="checkbox"> 40€ - 60€</label>
+                        <label><input type="checkbox"> Más de 60€</label>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="area-productos">
+
+                <div class="opciones-ordenacion-contenedor">
+                    <div class="opciones-ordenacion">
+                        <label for="ordenar">Ordenar por:</label>
+                        <select id="ordenar">
+                            <option value="relevancia">Relevancia</option>
+                            <option value="precio-asc">Precio: más bajo</option>
+                            <option value="precio-desc">Precio: más alto</option>
+                        </select>
+                    </div>
+                    <div class="navegacion-productos">
+                        <button><i class="fas fa-chevron-left"></i></button>
+                        <button><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="malla-productos">
+
+                    <div class="tarjeta-producto">
+                        <img src="../imagenes/dskrosa.PNG" alt="Guantes de boxeo Buddha Top Premium">
+                        <a href="./producto.html">
+                            <h4>Casco de boxeo DSK F6 - negro rosa</h4>
+                        </a>
+                        <div class="valoracion"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> (1
+                            review)</div>
+                        <div class="precios">39,95€</div>
+                    </div>
+
+                    <div class="tarjeta-producto">
+                        <img src="../imagenes/cascovenumdorado.PNG" alt="Guantes de boxeo Buddha Luzbel">
+                        <h4>Casco de boxeo Venum Elite negro / oro </h4>
+                        <div class="valoracion"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (2
+                            reviews)</div>
+                        <div class="precios">44,95€</div>
+                    </div>
+
+                    <div class="tarjeta-producto">
+                        <div class="etiqueta-oferta">¡OFERTA!</div>
+                        <img src="../imagenes/leoneazul.PNG" alt="Guantes de boxeo DSK Viking">
+                        <h4>Casco de boxeo Leone The Greatest CS433 - Azul</h4>
+                        <div class="valoracion"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> (1
+                            review)</div>
+                        <div class="precios"><span class="precio-antiguo">49,95€</span> 44,95€</div>
+                    </div>
+
+                    <div class="tarjeta-producto">
+                        <img src="../imagenes/leoneblanco.PNG" alt="Guantes de boxeo Venum">
+                        <h4>Casco de boxeo con barra Leone The Greatest blanco</h4>
+                        <div class="valoracion"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> (1
+                            review)</div>
+                        <div class="precios">39,95€</div>
+                    </div>
+
+                    <div class="tarjeta-producto">
+                        <img src="../imagenes/leonenegro.PNG" alt="Guantes de boxeo Venum Elite">
+                        <h4>Casco de boxeo Leone The Greatest CS433 - Negro</h4>
+                        <div class="valoracion"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (1
+                            review)</div>
+                        <div class="precios">99,95€</div>
+                    </div>
+
+                    <div class="tarjeta-producto">
+                        <img src="../imagenes/cascovenumnegro.PNG" alt="Guantes de boxeo Leone">
+                        <h4>Casco de boxeo de barra Venum Elite Iron negro mate</h4>
+                        <div class="valoracion"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> (1
+                            review)</div>
+                        <div class="precios">71,95€</div>
+                    </div>
+
+                </div>
+
+                <div class="paginacion">
+                    <span class="actual">1</span>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <span>...</span>
+                    <a href="#"><i class="fas fa-chevron-right"></i></a>
+                </div>
+
+            </section>
+        </div>
+
+        <section class="media-boxeo" style="margin: 40px 0; text-align: center;">
+            <h2>Audio PERFECTO para entrenar 🥊</h2>
+            <audio controls>
+                <source src="../imagenes/boxing-rhythms_91559.mp3" type="audio/mpeg">
+                Tu navegador no soporta el reproductor de audio.
+            </audio>
+
+            <h2 style="margin-top: 30px;">Video Entrenamiento de Boxeo de nuestros expertos 🥊</h2>
+            <div style="display: flex; justify-content: center;">
+                <iframe width="600" height="340" src="https://www.youtube.com/embed/B_YHSnEHKJU"
+                    title="Video entrenamiento boxeo" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="columnas-pie">
+            <div class="columna">
+                <h3>ATENCIÓN AL CLIENTE</h3>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Envíos, cambios y devoluciones</a></li>
+                    <li><a href="#">Razón social</a></li>
+                    <li><a href="#">Preguntas frecuentes (FAQ)</a></li>
+                </ul>
+            </div>
+            <div class="columna">
+                <h3>SEGURIDAD Y PRIVACIDAD</h3>
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                </ul>
+            </div>
+            <div class="columna">
+                <h3>REDES SOCIALES</h3>
+                <div class="iconos-sociales">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <h4 style="margin-top: 20px;">MÉTODOS DE PAGO</h4>
+                <div class="iconos-pago">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+            <div class="columna tienda-fisica">
+                <h3>VISITA NUESTRA TIENDA FÍSICA</h3>
+                <div class="mapa-placeholder">
+                    C/ Conde de Peñalver, 22 MADRID
+                </div>
+            </div>
+            <div class="columna">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                    <img alt="Licencia Creative Commons" style="border-width:0"
+                        src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+                </a>
+                <br />
+                Esta obra está bajo una
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                    Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional
+                </a>.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
